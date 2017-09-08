@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timestamp Microservice</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+       API project: Url shortener microservice.
+      </h1>
+      
+    </header>
+
+    <main>
+      <h4>
+        Description:
+      </h4>
+
+      <p>
+      <ul>
+        <li>You can pass a URL as a parameter and you will receive a shortened URL in the JSON response.</li>
+        <li>When you visit that shortened URL, it will redirect you to your original link.</li>
+      </ul>
+      </p>
+    
+    <h4>
+      Example usage:
+    </h4>
+    <code>https://mhl-shorturl.glitch.me/new/www.google.com</code><br>
+    
+    <h4>
+      Result:
+    </h4>
+    <code>{url:"www.google.com" shortUrl:"https://mhl-shorturl.glitch.me/59b265f922c03e2e4e514dc3"}</code>
+    </main>
+
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
